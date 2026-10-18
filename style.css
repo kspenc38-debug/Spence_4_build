@@ -1,0 +1,46 @@
+/* CSS written by Kaleigh Spence */
+
+/* Global STYLES (MOBILE FIRST) */
+
+body {
+    display:grid;
+    grid-template-columns:1fr;
+    background-color:#fff6f0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}  
+
+header {
+    color:#ff7518;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+nav{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+  display:flex;
+  justify-content:space-evenly;
+  list-style:none;
+}
+
+nav a {
+  text-decoration:none;
+  background-color: #3f652b;
+  padding:1rem 2rem;
+  color:white;
+  font-size:1.5rem;
+  text-transform:uppercase;
+}
+nav a:hover {
+  background-color:white;
+  color:#3f652b;
+}
+
+h2 {
+    color: #8d7052;
+    text-decoration: underline;
+}
