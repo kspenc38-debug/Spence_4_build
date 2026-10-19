@@ -134,6 +134,7 @@ h3 {
 section p {
     margin-right: 120px;
     margin-left: 120px;
+    line-height: 30px;
 }
 
 #activities ul li {
@@ -141,6 +142,8 @@ section p {
     margin-right: 100px;
     margin-bottom: 20px;
     font-weight: bold;
+    color:#3f652b;
+    font-style: italic;
 }
 
 #your-visit ol li {
