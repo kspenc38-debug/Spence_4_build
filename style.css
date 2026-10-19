@@ -10,9 +10,28 @@ body {
 }  
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
     color:#ff7518;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+
+.top-right-image img {
+    width: 180px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .top-right-image img {
+        width: 90px;
+    }
 }
 
 
@@ -25,6 +44,28 @@ nav ul {
   display:flex;
   justify-content:space-evenly;
   list-style:none;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: cneter;
+        gap: 15px;
+        padding: 0;
+    }
+
+    nav li {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
 }
 
 nav a {
@@ -49,25 +90,82 @@ h2 {
 }
 
 h3 {
-    color:#8d7052;
+    color:#ff7518;
     margin-left: 80px;
      margin-bottom: 40px;
     margin-top: 40px;
 }
 
-.first-image, .second-image, .third-image, .fourth-image {
+    .first-image img,
+    .second-image img,
+    .third-image img,
+    .fourth-image img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+.first-image,
+ .second-image,
+  .third-image, 
+  .fourth-image {
   display: flex;
   justify-content: center; 
   align-items: center; 
+  border: 6px solid #3f652b;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .first-image img,
+    .second-image img,
+    .third-image img,
+    .fourth-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    } 
+
 }
 
 section p {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: 120px;
+    margin-left: 120px;
 }
 
 #activities ul li {
-    margin-left: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+#your-visit ol li {
+    margin-left: 120px;
+}
+
+#your-visit a {
+    text-decoration:none;
+    color: #ff7518;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#your-visit a:hover {
+background-color: #3f652b;
+}
+
+footer {
+    background-color: #8d7052;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    padding: 10px;
+    color: white;
+    border: 4px solid #3f652b;
+}
+
