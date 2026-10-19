@@ -43,4 +43,31 @@ nav a:hover {
 h2 {
     color: #8d7052;
     text-decoration: underline;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h3 {
+    color:#8d7052;
+    margin-left: 80px;
+     margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.first-image, .second-image, .third-image, .fourth-image {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+section p {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#activities ul li {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
